@@ -8,10 +8,15 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  issue_comment:
+    type: 
+     - created
+     - edited
+     - deleted
 
 jobs:
   build:
-
+  
     runs-on: ubuntu-latest
 
     steps:
